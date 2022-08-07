@@ -11,6 +11,7 @@ File.WriteAllText("input.txt",($"Массив заданый на старте �
 string[] LessThanThreeArray = LessThanThree(StartArray);
 
 WriteLine($"Массив сформированный из строк ,длинна которых меньше или равна 3 символов: \n[{String.Join(",",LessThanThreeArray)}]\n");
+File.WriteAllText("output.txt",($"Массив сформированный из строк ,длинна которых меньше или равна 3 символов: \n[{String.Join(",",LessThanThreeArray)}]\n"));
 
 string [] LessThanThree(string[] array)
 {
