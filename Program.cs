@@ -8,6 +8,10 @@ string [] StartArray =  { "Hello", "2", "World", "12 34","1567","-2","e2" ,"Neap
 WriteLine($"Массив заданый на старте выполнения: \n[{String.Join(",",StartArray)}]\n");
 File.WriteAllText("input.txt",($"Массив заданый на старте выполнения: \n[{String.Join(",",StartArray)}]\n"));
 
+string[] LessThanThreeArray = LessThanThree(StartArray);
+
+WriteLine($"Массив сформированный из строк ,длинна которых меньше или равна 3 символов: \n[{String.Join(",",LessThanThreeArray)}]\n");
+
 string [] LessThanThree(string[] array)
 {
     
